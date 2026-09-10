@@ -1,0 +1,41 @@
+#eventFeed {
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+}
+
+.event-item {
+    width: 320px;
+    margin-bottom: 1rem;
+}
+
+.card-overview {
+    width: 100%;
+    color: #302662;
+    
+}
+
+.event-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+button{
+    background-color: #302662;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.zoekbalk {
+    padding-bottom: 10px;
+}
+
+body {
+    background-color:#ffff;
+}
+

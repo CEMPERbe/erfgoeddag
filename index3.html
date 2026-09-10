@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Events</title>
+  
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+    <link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.12.0/styles/themes/default.css" />
+    <script type="module" src="https://ka-f.webawesome.com/webawesome@3.12.0/webawesome.loader.js"></script>
+
+    <link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.12.0/styles/utilities.css" />
+
+    <link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.12.0/styles/native.css" />
+
+    <link rel="stylesheet" href="style3.css">
+
+</head>
+
+<body>
+
+  <main class="container">
+
+<h2 style="color: #302662"><img alt="Uit in" border="0" class="logo-uiv" height="200%" src="https://projectaanvraag-api.uitdatabank.be/assets/images/uit-logo.svg"> op Erfgoeddag 2026</h2>
+
+
+<div class="zoekbalk">
+<label for="event-search" style="color: #302662">
+</label>
+<input
+    type="search"
+    id="event-search"
+    class="form-control"
+    placeholder="Zoek naar evenementen..."
+    autocomplete="off"
+>
+</div>
+    
+
+<div class="filters">
+<span style="color: #302662"> <strong >Categorie: </strong></span>
+    <select id="categoryFilter">
+    <option value="all">Alle</option>
+    <option value="Begeleide rondleiding"> Begeleide rondleiding</option>
+    <option value="Tentoonstelling">Tentoonstelling</option>
+    <option value="Theatervoorstelling">Theatervoorstelling</option>
+    <option value="Begeleide uitstap of rondleiding">Begeleide uitstap of rondleiding</option>
+    <option value="Concert">Concert</option>
+    <option value="Cursus met open sessies">Cursus met open sessies</option>
+    <option value="Dansvoorstelling">Dansvoorstelling</option>
+    <option value="Fiets- of wandelroute">Fiets- of wandelroute</option>
+    <option value="Film">Film</option>
+    <option value="Lezing of congres">Lezing of congres</option>
+    <option value="Markt of braderie">Markt of braderie</option>
+    <option value="Spel of quiz">Spel of quiz</option>
+    <option value="Sportactiviteit">Sportactiviteit</option>
+    </select>
+    
+</div>
+
+
+    <div id="eventFeed" class="event-feed"></div>
+
+    <wa-drawer id="drawer-overview" label="Evenement">
+        <h2 class="drawer-title" style="color:#302662"></h2>
+        <p class="drawer-organizer" style="font-weight:bold;color:#E57967" ></p>
+        <div class="drawer-description"></div>
+    </wa-drawer>
+
+  </main>
+
+  <script src="script3.js"></script>
+
+</body>
+</html>
